@@ -6,7 +6,7 @@ var gulp      = require('gulp'),
 var config    = {
     styles  : {
       main    : './src/sass/app.scss',
-      watch   : './src/sass/*.scss',
+      watch   : './src/sass/*/*.scss',
       output  : './build/css'
     },
     html    : {
@@ -31,6 +31,7 @@ gulp.task('build:css', function(){
 });
 
 gulp.task('watch', function(){
+  gulp.watch(config.styles.main, ['build:css']);
   gulp.watch(config.styles.watch, ['build:css']);
   gulp.watch(config.html.watch, ['build']);
 });

@@ -1,0 +1,78 @@
+#app-container {
+  color: #fff;
+  display: flex;
+  font-size: calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  flex-flow: column;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.app-container {
+  &-row {
+    display: flex;
+    font-size: calc(100% / 2);
+    height: 50%;
+    width: 100%;
+
+    &:first-of-type {
+      $first-row-colors: $teal, $green, $blue, $indigo;
+      @for $i from 1 through 4 {
+        .app-container-category:nth-of-type(#{$i}){
+          background-color: nth($first-row-colors, $i);
+        }
+      }
+    }
+
+    &:last-of-type {
+      $second-row-colors: $amber, $orange, $red, $purple;
+      @for $i from 1 through 4 {
+        .app-container-category:nth-of-type(#{$i}){
+          background-color: nth($second-row-colors, $i);
+        }
+      }
+    }
+  }
+
+  &-category {
+    height: 100%;
+    overflow: hidden;
+    padding: .1em;
+    position: relative;
+    text-align: center;
+    width: 25%;
+
+    h1 {
+      font-size: 0.075em;
+      line-height: 1em;
+      margin-bottom: 1em;
+    }
+
+    span {
+      background: rgba(0,0,0,0.05);
+      height: calc(1em - 0.425em);
+      left: 40%;
+      position: absolute;
+      top: 54%;
+      transform: rotate(45deg);
+      width: calc(1em - 0.2em);
+    }
+
+    &-image {
+      background-color: #fff;
+      background-image: url("../img/electronic-invoice.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      border-radius: 100%;
+      height: calc(1em - 0.425em);
+      left: 0;
+      margin: 0 auto 0.075em;
+      position: absolute;
+      right: 0;
+      width: calc(1em - 0.425em);
+    }
+  }
+}
