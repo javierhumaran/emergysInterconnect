@@ -1,8 +1,29 @@
 $teal: #009688;
+$teal-light: #4DB6AC;
+
 $green: #4CAF50;
+$green-light: #81C784;
+
 $blue: #2196F3;
+$blue-light: #64B5F6;
+
 $indigo: #3F51B5;
+$indigo-light: #7986CB;
+
 $amber: #FFC107;
+$amber-light: #FFD54F;
+
 $orange: #FF9800;
+$orange-light: #FFB74D;
+
 $red: #EF5350;
+$red-light: #E57373;
+
 $purple: #BA68C8;
+$purple-light: #CE93D8;
+
+$first-row-colors: $teal, $green, $indigo, $blue;
+$first-row-colors-light: $teal-light, $green-light, $indigo-light, $blue-light;
+
+$second-row-colors: $amber, $orange, $purple, $red;
+$second-row-colors-light: $amber-light, $orange-light, $purple-light, $red-light;

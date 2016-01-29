@@ -1,3 +1,20 @@
+@mixin row-colors($normal, $light) {
+  @for $i from 1 through 4 {
+    .app-container-category:nth-of-type(#{$i}){
+      background-color: nth($normal, $i);
+      &:hover {
+        background-color: nth($light, $i);
+        border: .05em solid nth($normal, $i);
+        padding: .05em;
+
+        span {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
 #app-container {
   color: #fff;
   display: flex;
@@ -18,21 +35,11 @@
     width: 100%;
 
     &:first-of-type {
-      $first-row-colors: $teal, $green, $blue, $indigo;
-      @for $i from 1 through 4 {
-        .app-container-category:nth-of-type(#{$i}){
-          background-color: nth($first-row-colors, $i);
-        }
-      }
+      @include row-colors($first-row-colors, $first-row-colors-light);
     }
 
     &:last-of-type {
-      $second-row-colors: $amber, $orange, $red, $purple;
-      @for $i from 1 through 4 {
-        .app-container-category:nth-of-type(#{$i}){
-          background-color: nth($second-row-colors, $i);
-        }
-      }
+      @include row-colors($second-row-colors, $second-row-colors-light);
     }
   }
 
@@ -42,12 +49,14 @@
     padding: .1em;
     position: relative;
     text-align: center;
+    transition: background 0.8s ease;
     width: 25%;
 
     h1 {
       font-size: 0.075em;
       line-height: 1em;
       margin-bottom: 1em;
+      transition: all 0.3s ease;
     }
 
     span {
@@ -72,6 +81,7 @@
       margin: 0 auto 0.075em;
       position: absolute;
       right: 0;
+      transition: transform 0.3s ease;
       width: calc(1em - 0.425em);
     }
   }
