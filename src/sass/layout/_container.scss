@@ -54,6 +54,7 @@
 
     h1 {
       font-size: 0.075em;
+      font-weight: 400;
       line-height: 1em;
       margin-bottom: 1em;
       transition: all 0.3s ease;
@@ -69,12 +70,52 @@
       width: calc(1em - 0.2em);
     }
 
+    &.conectivity {
+      .app-container-category-image {
+        background-image: url("../img/conectivity.png");
+      }
+    }
+    &.bpm {
+      .app-container-category-image {
+        background-image: url("../img/bpm.png");
+      }
+    }
+    &.mobile {
+      .app-container-category-image {
+        background-image: url("../img/mobile.png");
+      }
+    }
+    &.ba {
+      .app-container-category-image {
+        background-image: url("../img/ba.png");
+      }
+    }
+    &.retail {
+      .app-container-category-image {
+        background-image: url("../img/retail.png");
+      }
+    }
+    &.manufacturing {
+      .app-container-category-image {
+        background-image: url("../img/manufacturing.png");
+      }
+    }
+    &.logistics {
+      .app-container-category-image {
+        background-image: url("../img/logistics.png");
+      }
+    }
+    &.e-invoice {
+      .app-container-category-image {
+        background-image: url("../img/e-invoice.png");
+      }
+    }
+
     &-image {
       background-color: #fff;
-      background-image: url("../img/electronic-invoice.png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 80%;
+      background-size: 70%;
       border-radius: 100%;
       height: calc(1em - 0.425em);
       left: 0;

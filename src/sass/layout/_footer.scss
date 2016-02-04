@@ -1,21 +1,25 @@
-#app-footer {
+.app-footer {
   background-color: white;
   bottom: 0;
   display: flex;
-  font-size: calc(50vh - 40px);
   height: 80px;
   justify-content: space-between;
   left: 0;
-  padding: .06em .1em;
+  padding: 1.5em 2em;
   position: fixed;
   width: 100%;
+
+  &.w {
+    background-color: transparent;
+    display: none;
+  }
 
   .acreditations-container {
     display: flex;
     height: 100%;
 
     img {
-      margin-right: .1em;
+      margin-right: 1.5em;
     }
   }
 

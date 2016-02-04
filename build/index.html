@@ -4,62 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Emergys</title>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Roboto:400,100,300,500,100italic,300italic,400italic,500italic,700,700italic,900,900italic|Passion+One:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/app.css">
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
   <section id="app-container">
     <div class="app-container-row">
-      <article class="app-container-category">
+      <article class="app-container-category conectivity">
         <h1>Conectivity</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
-      <article class="app-container-category">
+      <article class="app-container-category bpm">
         <h1>BPM</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
-      <article class="app-container-category">
+      <article class="app-container-category mobile">
         <h1>Mobile / IoT</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
-      <article class="app-container-category">
+      <article class="app-container-category ba">
         <h1>Business Analytics</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
     </div>
     <div class="app-container-row">
-      <article class="app-container-category">
+      <article class="app-container-category retail">
         <h1>Retail</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
-      <article class="app-container-category">
+      <article class="app-container-category manufacturing">
         <h1>Manufacturing</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
-      <article class="app-container-category">
+      <article class="app-container-category logistics">
         <h1>Logistics</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
-      <article class="app-container-category">
+      <article class="app-container-category e-invoice">
         <h1>Electronic Invoice</h1>
         <span></span>
         <div class="app-container-category-image"></div>
       </article>
     </div>
   </section>
-  <footer id="app-footer">
+  <footer id="main-footer" class="app-footer">
     <div class="acreditations-container">
       <img src="img/sap-member.png" alt="">
       <img src="img/ibm-partner.png" alt="">
       <img src="img/cmmi-dev.png" alt="">
     </div>
-    <img src="img/emergys-logo.png" alt="">
+    <img class="emergys-logo" src="img/emergys-logo.png" alt="">
   </footer>
+  <!-- CATEGORIES MODALS -->
+  <section id="app-full-category">
+    <header id="app-header">
+      <ul>
+        <li>EMERGYS</li>
+        <li class="app-header-center">WHO ARE WE?</li>
+        <li id="#home-button" class="fa fa-th"></li>
+      </ul>
+    </header>
+    <section class="app-container-full-category">
+      <div class="fa fa-chevron-left fa-5x">
+      </div>
+      <article class="app-container-full-category-section fa fa-camera-retro fa-5x">
+        <h1>Emergys is a cloud enablement company, helping companies align their long-term IT strategies and business objectives with the right mix</h1>
+      </article>
+      <div class="fa fa-chevron-right fa-5x"></div>
+    </section>
+    <footer class="app-footer w">
+      <div class="acreditations-container">
+        <img src="img/sap-member-b.png" alt="">
+        <img src="img/ibm-partner-b.png" alt="">
+        <img src="img/cmmi-dev-b.png" alt="">
+      </div>
+      <img src="img/emergys-logo-b.png" alt="">
+    </footer>
+  </section>
 </body>
 </html>

@@ -10,20 +10,31 @@ $blue-light: #64B5F6;
 $indigo: #3F51B5;
 $indigo-light: #7986CB;
 
-$amber: #FFC107;
-$amber-light: #FFD54F;
+$amber: #FFC741;
+$amber-light: lighten($amber, 10%);
 
-$orange: #FF9800;
-$orange-light: #FFB74D;
+$orange: #FF9B3B;
+$orange-light: lighten($orange, 10%);
 
-$red: #EF5350;
-$red-light: #E57373;
+$red: #FF6F6F;
+$red-light: lighten($red, 10%);
 
 $purple: #BA68C8;
 $purple-light: #CE93D8;
 
-$first-row-colors: $teal, $green, $indigo, $blue;
-$first-row-colors-light: $teal-light, $green-light, $indigo-light, $blue-light;
+$first-row-colors: $teal, $green, $blue, $indigo;
+$first-row-colors-light: $teal-light, $green-light, $blue-light, $indigo-light;
 
-$second-row-colors: $amber, $orange, $purple, $red;
-$second-row-colors-light: $amber-light, $orange-light, $purple-light, $red-light;
+$second-row-colors: $amber, $orange, $red, $purple;
+$second-row-colors-light: $amber-light, $orange-light, $red-light, $purple-light;
+
+$grey-50: #FAFAFA;
+$grey-100: #F5F5F5;
+$grey-200: #EEEEEE;
+$grey-300: #E0E0E0;
+$grey-400: #BDBDBD;
+$grey-500: #9E9E9E;
+$grey-600: #757575;
+$grey-700: #616161;
+$grey-800: #424242;
+$grey-900: #212121;
