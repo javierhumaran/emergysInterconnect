@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Emergys</title>
   <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Roboto:400,100,300,500,100italic,300italic,400italic,500italic,700,700italic,900,900italic|Passion+One:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
   <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </head>
@@ -71,7 +71,14 @@
     <header id="modal-header">
       <ul>
         <li>EMERGYS</li>
-        <li class="app-header-center">WHO ARE WE?</li>
+        <li class="app-header-center">
+          <div class="titles-container">
+            <div id="title-left" class="slideshow-controls fa fa-chevron-left fa-5x"></div>
+            <ul id="titles-list">
+            </ul>
+            <div id="title-right" class="slideshow-controls fa fa-chevron-right fa-5x"></div>
+          </div>
+        </li>
         <li id="home-button" class="fa fa-th"></li>
       </ul>
     </header>
@@ -79,12 +86,6 @@
       <div id="slideshow-left" class="slideshow-controls fa fa-chevron-left fa-5x">
       </div>
       <div id="slideshow">
-        <article class="slide fa fa-camera-retro fa-5x">
-          <h1>Emergys is a cloud enablement company, helping companies align their long-term IT strategies and business objectives with the right mix</h1>
-        </article>
-        <article class="slide fa fa-camera-retro fa-5x">
-          <h1>Hello World! This is another slide in the slideshow, if you can see this, it means that your slideshow interaction works.</h1>
-        </article>
       </div>
       <div id="slideshow-right" class="slideshow-controls fa fa-chevron-right fa-5x"></div>
     </section>
@@ -94,7 +95,7 @@
         <img src="img/ibm-partner-b.png" alt="">
         <img src="img/cmmi-dev-b.png" alt="">
       </div>
-      <img src="img/emergys-logo-b.png" alt="">
+      <img class="emergys-logo" src="img/emergys-logo-b.png" alt="">
     </footer>
   </section>
 </body>

@@ -6,7 +6,7 @@
   * {
     color: rgba(0,0,0,0.3);
   }
-  ul {
+  > ul {
     align-items: center;
     display: flex;
     height: 100%;
@@ -15,17 +15,69 @@
     margin: 0;
     padding: 0;
 
-    li {
-      font-size: 30%;
+    > li {
+      font-size: .3em;
       font-weight: 500;
 
-      &.app-header-center {
-        font-size: 60%;
-      }
       &.fa {
         font-weight: 100;
         line-height: 100%;
       }
+
+      > ul {
+        list-style: none;
+
+        > li {
+          font-weight: 500;
+        }
+
+      }
     }
+  }
+}
+
+#modal-header .app-header-center {
+  font-size: 60%;
+  height: 100%;
+  text-align: center;
+  width: 60%;
+
+  .titles-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+
+    .slideshow-controls {
+      font-size: .6em;
+      width: 10%;
+
+      &#title-left {
+        text-align: right;
+      }
+
+      &#title-right {
+        text-align: left;
+      }
+    }
+  }
+}
+
+#titles-list {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  width: 80%;
+
+  > li {
+    font-weight: 500;
+    width: 100%;
   }
 }
