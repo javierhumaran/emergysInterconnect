@@ -18,8 +18,8 @@
 #app-container {
   color: #fff;
   display: flex;
-  font-size: calc(100vh - 80px);
-  height: calc(100vh - 80px);
+  font-size: 92vh;
+  height: 92%;
   flex-flow: column;
   left: 0;
   position: fixed;
@@ -30,7 +30,7 @@
 .app-container {
   &-row {
     display: flex;
-    font-size: calc(100% / 2);
+    font-size: 50%;
     height: 50%;
     width: 100%;
 

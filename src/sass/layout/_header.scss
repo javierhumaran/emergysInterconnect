@@ -1,6 +1,7 @@
-#app-header {
-  height: 4.5em;
-  padding: 1.5em 2em;
+#modal-header {
+  font-size: 8vh;
+  height: 8%;
+  padding: 0.1em 0.25em;
 
   * {
     color: rgba(0,0,0,0.3);
@@ -15,11 +16,11 @@
     padding: 0;
 
     li {
-      font-size: 1.25em;
+      font-size: 30%;
       font-weight: 500;
 
       &.app-header-center {
-        font-size: 1.5em;
+        font-size: 60%;
       }
       &.fa {
         font-weight: 100;
