@@ -59,7 +59,7 @@ $(function(){
 
   // This function allows to render the right content for the corresponding title at the category's slideshow
   function renderSlides() {
-    $slideshow.find('.slide').fadeOut(0);
+    $slideshow.find('.slide').fadeOut(300);
 
     var titleSlides = slideShowObject.emergys.slides.content[currentTitle];
 
@@ -68,7 +68,7 @@ $(function(){
 
       var $elem = $(elem);
       $elem.addClass(slideShowObject.emergys.slides.icon[currentTitle][slideIndex]);
-      $slideshow.append($elem);
+      $elem.appendTo($slideshow).hide().fadeIn(300);
     });
   }
 
@@ -111,14 +111,21 @@ $(function(){
   function slideshowClicks(ev) {
     var elem          = ev.data.toScroll,
         scroll        = parseInt(elem.css('width')),
-        actualScroll  = elem.scrollLeft();
+        actualScroll  = elem.scrollLeft(),
+        titlesLenght  = slideShowObject.emergys.titles.length - 1,
+        direction     = ev.data.direction;
 
     if (ev.data.title) {
-      currentTitle = currentTitle + (1 * ev.data.direction);
-      renderSlides();
-    }
+      if(!((currentTitle == 0 && direction == -1) || (currentTitle == titlesLenght && direction == 1))) {
+        currentTitle = currentTitle + (1 * direction);
+        renderSlides();
 
-    elem.animate({scrollLeft: actualScroll + (scroll * ev.data.direction)}, 300);
+        elem.animate({scrollLeft: actualScroll + (scroll * ev.data.direction)}, 300);
+      }
+    }
+    else {
+      elem.animate({scrollLeft: actualScroll + (scroll * ev.data.direction)}, 300);
+    }
   }
 
   // Subscribing the slideshow arrow controllers to the click event
