@@ -119,13 +119,9 @@ $(function(){
       if(!((currentTitle == 0 && direction == -1) || (currentTitle == titlesLenght && direction == 1))) {
         currentTitle = currentTitle + (1 * direction);
         renderSlides();
-
-        elem.animate({scrollLeft: actualScroll + (scroll * ev.data.direction)}, 300);
       }
     }
-    else {
-      elem.animate({scrollLeft: actualScroll + (scroll * ev.data.direction)}, 300);
-    }
+    elem.animate({scrollLeft: actualScroll + (scroll * ev.data.direction)}, 300);
   }
 
   // Subscribing the slideshow arrow controllers to the click event
