@@ -18,7 +18,7 @@
     &.light {
       .app-container-full-category {
 
-        h1 {
+        h1, h2, h3 {
           color: $grey-800;
         }
       }
@@ -73,14 +73,199 @@
       font-size: 9em;
       left: 0;
       position: absolute;
+      z-index: -1;
     }
 
     h1 {
       color: white;
       font-family: 'Bree Serif', serif;
       font-size: 0.75em;
-      padding: 0 1em;
+      padding: 0 1.5em;
       z-index: 9;
+    }
+  }
+}
+
+.flags-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.25em;
+
+  > div {
+    display: flex;
+    height: 2.5em;
+    justify-content: flex-end;
+    margin: 0.25em 0;
+
+    img {
+      height: 85%;
+      margin: 0 .33em;
+    }
+  }
+}
+
+.fa-globe {
+  &:before {
+    bottom: 0.1em !important;
+  }
+}
+
+.fa-users {
+  &:before {
+    font-size: 8em !important;
+    top: 0.2em;
+  }
+}
+
+.center {
+  text-align: center;
+
+  h1 {
+    padding: 0 !important;
+  }
+}
+
+.left {
+  text-align: left;
+
+  h1 {
+    padding: 0 3em 0 0 !important;
+  }
+
+}
+
+.right {
+  text-align: right;
+
+  h1 {
+    padding: 0 0 0 3em !important;
+  }
+}
+
+.no-padding {
+  h1 {
+    padding: 0 !important;
+  }
+}
+
+#slideshow .slide {
+  .slide-header {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    justify-content: center;
+    margin-top: 5%;
+
+    h3 {
+      color: #fff;
+      font-family: 'Bree Serif', serif;
+      font-size: .45em;
+      margin: 0;
+    }
+  }
+
+  .slide-content {
+    height: 80%;
+    margin-bottom: 5%;
+
+    h1 {
+      margin: .5em 0;
+      padding: 0;
+    }
+
+    h2 {
+      color: #fff;
+      font-family: 'Bree Serif', serif;
+      font-size: 0.6em;
+      margin: 0 0 0.5em;
+      padding: 0 1em;
+    }
+  }
+
+  .slide-hero {
+    height: 80%;
+    margin-top: 0.25em;
+    text-align: center;
+
+    img {
+      height: 100%;
+    }
+
+    h1 {
+      margin: 1.5em 0 1em;
+      padding: 0;
+      text-align: left;
+    }
+
+    h2 {
+      font-family: 'Bree Serif', serif;
+      font-size: 0.6em;
+      margin: 0 0 0.5em;
+      padding: 0 1em;
+      text-align: left;
+    }
+  }
+}
+
+.clients-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  img {
+    height: 100%;
+    margin: 0 .33em;
+    width: 28%;
+  }
+}
+
+#slideshow .slide {
+  .service-section {
+    display: flex;
+    height: 65%;
+    margin-top: 1em;
+
+    .column {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      width: 40%;
+
+      &:first-of-type {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60%;
+      }
+
+      img {
+        height: 6em;
+        margin: 0 auto;
+        width: 6em;
+      }
+
+      h3 {
+        font-family: 'Bree Serif', serif;
+        font-size: .5em;
+        margin: 0;
+      }
+
+      button {
+        background-color: transparent;
+        border: .15em solid $blue;
+        color: $blue;
+        font-family: 'Bree Serif', serif;
+        font-size: 0.6em;
+        height: 2.5em;
+        margin: 0;
+        outline: none;
+        padding: 0 0.75em;
+
+        &:hover {
+          background-color: $blue;
+          color: white;
+        }
+
+
+      }
     }
   }
 }
