@@ -195,9 +195,14 @@
       margin: 1.5em 0 1em;
       padding: 0;
       text-align: left;
+
+      &.no-margin-top {
+        margin-top: 0;
+      }
     }
 
     h2 {
+      color: white;
       font-family: 'Bree Serif', serif;
       font-size: 0.6em;
       margin: 0 0 0.5em;
